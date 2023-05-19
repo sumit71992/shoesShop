@@ -1,0 +1,29 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #4d1601;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.5rem;
+    font-weight: bold;
+  }
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+  .icon i{
+    font-size: 1.3rem;
+  }
+  
+  .badge {
+    background-color: #68270d;
+    padding: 0.2rem 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
