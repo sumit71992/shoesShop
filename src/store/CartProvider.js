@@ -25,11 +25,17 @@ const CartProvider = (props) => {
     setItems(arr);
   };
 
+  const orderItemHandler = () => {
+    setItems((prev)=>{
+      return [];
+    });
+  };
+
   const cartContext = {
     items: items,
-    totalAmount: 0,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    orderItem: orderItemHandler
   };
 
   return (

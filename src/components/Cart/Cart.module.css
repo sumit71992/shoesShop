@@ -32,6 +32,7 @@
   margin-right: 0.3rem;
   background-color: white;
   color: #5a1a01;
+  border: 1px solid #5a1a01;
 }
 .minus:hover{
 color: white;
@@ -66,7 +67,7 @@ color: white;
   color: white;
 }
 
-.actions .close {
+.actions .close{
   color: #8a2b06;
 }
 

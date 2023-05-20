@@ -2,6 +2,9 @@
     max-width: 60rem;
     width: 90%;
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
   
   .shoes ul {

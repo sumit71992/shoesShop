@@ -15,6 +15,9 @@ const Cart = (props) => {
     cartCtx.removeItem(event.target.id);
   };
 
+  const orderCartHandler =()=>{
+    cartCtx.orderItem();
+  }
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (
@@ -23,7 +26,7 @@ const Cart = (props) => {
             <div>{item.name} </div>
             <div className={classes["cart-items-details"]}>
               <div className={classes["cart-items-price"]}>
-                $ {item.price.toFixed(2)}
+              &#8377; {item.price}
               </div>
               <div className={classes.quantity}>x {item.quantity}</div>
             </div>
@@ -47,13 +50,13 @@ const Cart = (props) => {
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
-        <span>{totalAmount.toFixed(2)}</span>
+        <span>&#8377; {totalAmount}</span>
       </div>
       <div className={classes.actions}>
         <button className={classes.close} onClick={props.onHide}>
           Close
         </button>
-        <button className={classes.button}>Order</button>
+        <button className={classes.button} onClick={orderCartHandler}>Order</button>
       </div>
     </Modal>
   );
